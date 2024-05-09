@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/registration.css">
+</head>
+
+<body>
+  <center>
+    <div class="header">
+      <div class="container">
+        <b>NEWS :</b>
+        <marquee>Enlightened people,enlightened world ....... Welcome to Government Saadat College,Karatia,Tangail-1903.Established:1926 ,College Code:0070 ,EIIN:114747 .</marquee>
+      </div>
+    </div>
+    <div class="nav">
+      <img src="images/logo2.png" class="logo">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html">About us</a>
+        <a href="index.html">Events</a>
+        <a href="index.html">Gallery</a>
+        <a href="result.html">Result</a>
+        <a href="registration.html">Registration</a>
+        <a href="#">Contact us</a>
+      </nav>
+    </div>
+    <div class="maindiv">
+      <h1>Student Registration</h1>
+      <form action="" method="post" onsubmit="return validateForm()">
+        <div class="subdiv">
+          <h2>Basic Details</h2>
+          <p><b>Applicant Name</b></p>
+          <p><input type="text" placeholder="FIRST NAME" id="firstNameInput" required></p>
+          <p><input type="text" placeholder="LAST NAME" id="lastNameInput" required></p>
+          <p><b>Date of Birth</b></p>
+          <p><input type="date" placeholder="Date of Birth" id="dobInput" required></p>
+          <p><b>Gender</b></p>
+          <div class="hh">
+            <input class="myradio" type="radio" name="gender" value="Male">Male
+            <input class="myradio" type="radio" name="gender" value="Female">Female
+            <input class="myradio" type="radio" name="gender" value="Others">Others
+          </div>
+        </div>
+        <div class="subdiv">
+          <h2>Contact Details</h2>
+          <p><b>Mobile No</b></p>
+          <p><input type="tel" placeholder="Mobile No" id="mobileInput" required></p>
+          <p><b>Email ID</b></p>
+          <p><input type="email" placeholder="Email ID" id="emailInput" required></p>
+        </div>
+        <div class="subdiv">
+          <h2>Password</h2>
+          <p><b>Password</b></p>
+          <p><input type="password" placeholder="Password" id="pass1"><span id="mess1"></span></p>
+          <p><b>Confirm Password</b></p>
+          <p><input type="password" placeholder="Confirm Password" id="pass2"><span id="mess2"></span></p>
+        </div>
+        <button type="reset" id="resetb">Reset</button>
+        <button type="button" id="registerb" onclick="insertRow()">Register</button>
+      </form>
+    
+      <h2>Registered Students</h2>
+      <table id="studentsTable">
+        <tr>
+          <th>Name</th>
+          <th>Date of Birth</th>
+          <th>Gender</th>
+          <th>Mobile No</th>
+          <th>Email ID</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td>Md Monir Hossen</td>
+          <td>02/01/1997</td>
+          <td>Male</td>
+          <td>01725795380</td>
+          <td>mdmonirhossen0003@gmail.com</td>
+          
+        </tr>
+        <tr>
+          <td>Md Arafat Omar</td>
+          <td>29/02/1998</td>
+          <td>Male</td>
+          <td>01604138032</td>
+          <td>Arafat@gmail.com</td>        
+        </tr>
+<tr>
+          <td>Md Mahafuzul Hok Adil</td>
+          <td>29/02/1997</td>
+          <td>Male</td>
+          <td>019917789610</td>
+          <td>Adil@gmail.com</td>        
+        </tr>
+      </table>
+      <button onclick="clearTable()">Clear All</button>
+    </div>
+  </center>
+  <script src="registration.js"></script>
+</body>
+
+</html>
